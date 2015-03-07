@@ -26,9 +26,7 @@ public class XKCDAgeCalculator {
      * @return The max age you can date
      */
     public static int getMaximumAge(int age) {
-        int proposedAge=age;
-        while (getMinimumAge(proposedAge) != age) proposedAge++;
-        return proposedAge;
+        return (age - 7) * 2;
     }
 
 }
